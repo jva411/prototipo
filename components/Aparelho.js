@@ -38,7 +38,7 @@ export default function ({aparelho, custo, taxa, remove}) {
                 <Text>{`R$ ${(consumos.hora * aparelho.horas).toFixed(2)}`}</Text>
             </Flex>
             <Flex className={styles.Line}>
-                <Text>{`Consumo diário (30 dias): `}</Text>
+                <Text>{`Consumo mensal (30 dias): `}</Text>
                 <Text>{`R$ ${(consumos.hora * aparelho.horas * 30).toFixed(2)}`}</Text>
             </Flex>
         </Box>
