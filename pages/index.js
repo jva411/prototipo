@@ -184,6 +184,7 @@ export default function Principal(Props) {
                 ? <NovoAparelho
                     criar={data => {
                         props.aparelhos.push(data)
+                        props.novoAparelho = false
                         setProps({...props})
                     }}
                     cancelar={() => setProps({...props, novoAparelho: false})} />
