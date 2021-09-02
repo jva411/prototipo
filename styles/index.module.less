@@ -1,0 +1,90 @@
+div.Root {
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    border: 0.1rem solid #000;
+
+    .contorn {
+        text-shadow: 1px 1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000, -1px -1px 1px #000;
+    }
+
+    input {
+        border-radius: 1.6rem;
+        height: 2.4rem;
+        padding: 0 1.2rem;
+        
+        &:focus {
+            outline: none;
+        }
+
+        & + p {
+            margin: 0.4rem 0 0 1rem;
+        }
+    }
+
+    button {
+        cursor: pointer;
+    }
+
+    .Header {
+        justify-content: space-between;
+        margin-top: 1.5rem;
+
+        h2 > span {
+            .contorn()
+        }
+
+        .Bandeira {
+            height: 6.5rem;
+            min-width: 80%;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #fff;
+            .contorn();
+        }
+    }
+
+    .Grid {
+        .AddButton {
+            border: 0.4rem solid #000;
+            border-radius: 50%;
+            outline: none;
+            font-size: 9rem;
+            background: none;
+            margin-left: -12rem;
+            transition: 0.2s ease-in;
+
+            &:hover {
+                transform: scale(110%);
+            }
+        }
+    }
+
+    .Total {
+        margin-top: 5rem;
+        width: 35rem;
+
+        .Line {
+            justify-content: space-between;
+            font-size: 1.8rem;
+
+            p {
+                text-align: left;
+                & + p {
+                    text-align: right;
+                }
+            }
+
+            & + .Line {
+                margin-top: -3rem;
+            }
+        }
+
+        .Taxas {
+            font-weight: 600;
+            margin-bottom: -1rem;
+        }
+    }
+}

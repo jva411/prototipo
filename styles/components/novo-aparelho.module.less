@@ -1,0 +1,28 @@
+div.Card {
+    position: relative;
+    border-radius: 0.8rem;
+    height: fit-content;
+    padding: 1rem;
+    padding-top: 2rem;
+    box-shadow: 0 0 3px #000;
+
+    .Button {
+        position: absolute;
+        top: 1rem;
+        right: 3.5rem;
+        border: none;
+        background: none;
+        font-size: 2rem;
+
+        & + .Button {
+            right: 1rem;
+        }
+    }
+
+    .Line {
+        display: grid;
+        justify-items: space-between;
+        margin-bottom: 1rem;
+    }
+
+}
